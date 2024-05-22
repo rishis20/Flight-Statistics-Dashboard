@@ -41,7 +41,7 @@ public_html/
 ├── styles.css           # CSS styles for the application
 ├── main.js              # JavaScript logic for handling UI and data
 └── index.html           # Main HTML document
-
+```
 ## Setup and Configuration
 
 1. **Web Server Setup**: Place all files under the `public_html` directory of your web server. Ensure PHP is configured correctly to execute `flight.php`.
