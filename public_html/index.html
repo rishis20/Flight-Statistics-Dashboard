@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hong Kong International Airport Flight Information</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section class="container">
+            <header>
+                <h1>Hong Kong International Airport Flight Information</h1>
+            </header>
+            <form class="form_container" id="flightForm">
+                <label for="date">Date of Flight:</label>
+                <input type="date" id="date" min="2023-01-01" max="2024-12-12">
+                <input type="submit" value="Search">
+            </form>
+            <p id="dateValidationMessage" ></p>
+            <div id="Title" class="title"></div>
+            <div class= "split left" id="departure_Data"></div>
+            
+            <div class= "split right" id="arrival_Data"></div>
+            </div>  
+
+        <script src="main.js"></script>
+        </section>
+    </body>
+</html>

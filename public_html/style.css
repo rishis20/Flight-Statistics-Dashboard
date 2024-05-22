@@ -1,0 +1,138 @@
+header{
+    text-align: center;
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    background-color: antiquewhite;
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    display: flex;  
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.form_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding:auto;
+    width: 100%;
+    position: relative;
+}
+
+#dateValidationMessage {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    border-radius: 5px;
+}
+
+#dateValidationMessage:empty {
+    display: none;
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+    #dateValidationMessage {
+        font-size: 12px; 
+        padding: 3px; 
+    }
+}
+
+.title{
+    margin: 10px;
+    width:100%;
+    padding: auto;
+    flex:none;
+}
+
+.split {
+    flex: 1; 
+    min-width: 0; 
+    padding: 10px; 
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.split h2{
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#title_centre{
+    text-align: center;
+    margin:10px;
+    padding:5px;
+}
+
+.histogram-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.histogram-column {
+    flex: 1;
+    text-align: center;
+}
+
+.bar {
+    height: 20px;
+    background-color: #4CAF50;
+}
+
+.row {
+    display: flex;
+    margin: 5px 0;
+}
+
+.column:first-child {
+    flex: 0 0 auto;
+    text-align: left;
+}
+
+.column:nth-child(2) {
+    flex: 1 1 auto;
+    text-align: center;
+    word-wrap: break-word;
+    padding-right: auto;
+    margin:auto;
+}
+
+.column:last-child {
+    flex: 0 0 auto;
+    text-align: right;
+    margin-right: 10px;
+    padding:auto;
+}
+
+@media screen and (max-width: 500px) {
+    .split {
+        flex: none;
+        width: 100%;
+    }
+    .row {
+        margin: 15px 0;  /* Increase the row margin */
+    }
+
+    .column {
+        padding: 5px;  /* Adjust the column padding */
+        font-size: 15px;  /* Reduce the font size */
+    }
+
+    #dateValidationMessage {
+        font-size: 12px; 
+        padding: 3px; 
+    } 
+}
