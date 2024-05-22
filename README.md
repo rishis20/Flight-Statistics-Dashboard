@@ -31,13 +31,16 @@ This web application fetches and displays passenger flight statistics from Hong 
 - **PHP**: A `flight.php` script is used as a proxy to handle CORS restrictions by fetching data from the HK Airport API and forwarding it to the frontend.
 
 ### Directory Structure
+## Directory Structure
+
+```plaintext
 public_html/
 │
-├── flight.php # Proxy script to handle API requests
-├── iata.json # Airport descriptive data
-├── styles.css # CSS styles for the application
-├── main.js # JavaScript logic for handling UI and data
-└── index.html # Main HTML document
+├── flight.php           # Proxy script to handle API requests
+├── iata.json            # Airport descriptive data
+├── styles.css           # CSS styles for the application
+├── main.js              # JavaScript logic for handling UI and data
+└── index.html           # Main HTML document
 
 ## Setup and Configuration
 
